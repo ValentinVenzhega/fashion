@@ -1,0 +1,49 @@
+.main {
+   text-transform: uppercase;
+   background-image: url(../image/header/1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 745px;
+   position: relative;
+
+   &__block {
+      position: absolute;
+      bottom: 15%;
+      right: 16%;
+
+   }
+
+
+   &__uptitle {
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   &__title {
+      font-size: 80px;
+      font-weight: 700;
+   }
+
+   &__subtitle {
+      text-transform: none;
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   &__button {
+      padding-top: 20px;
+   }
+
+   &__btn {
+      width: 147px;
+      height: 35px;
+      background: #22262A;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-right: 34px;
+      border: 0;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}

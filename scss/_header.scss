@@ -1,0 +1,157 @@
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   text-transform: uppercase;
+   padding: 25px 0 25px 0;
+
+   &__logo {
+      font-size: 28px;
+      font-weight: 700;
+   }
+
+   &__list {
+      display: flex;
+      font-size: 18px;
+   }
+
+   &__item {
+      list-style-type: none;
+      padding-right: 30px;
+      &:last-child {
+         padding-right: 0;
+      }
+   }
+
+   &__icon {
+      display: flex;
+   }  
+
+}
+
+.icon__img {
+   width: 20px;
+   height: 20px;
+   padding-right: 40px;
+   &:last-child {
+      padding-right: 0;
+   }
+}
+   
+
+.menu {
+   opacity: 0.9;
+   background: #c2c2c5;
+   position: fixed;
+   width: 320px;
+   height: 100%;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s;
+   top: -160vw;
+   left: 0;
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+   }
+   &__item {
+      padding-right: 40px;
+      font-size: 14px;
+   }
+
+   &::last-child {
+      padding-right: 0;
+   }
+   &__burger {
+      display: none;
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      top: 29px;
+      right: 18px;
+      margin-top: -6px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      z-index: 12;
+      
+      span, span:before, span:after {
+         display: block;
+         height: 2px;
+         width: 18px;
+         position: absolute;
+         left: 50%;
+         margin-left: -9px;
+         top: 50%;
+         margin-top: -1px;
+         background-color: #000000;
+      }
+         
+      span:before {
+         transition: all 0.2s;
+         content: '';
+         margin-top: -6px ;
+      }
+         
+      span:after {
+         transition: all 0.2s;
+         content: '';
+         margin-top: 4px;
+      }
+
+      &_active span {
+         background-color: transparent;
+         &:before {
+            transform: rotate(45deg);
+            margin-top: 0;
+         }
+
+         &:after {
+            transform: rotate(-45deg);
+            margin-top: 0;
+         }
+      }
+   }
+
+   &_active {
+      top: 0;
+   }
+
+   ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+   }
+
+   // li {
+   //    width: 100vw;
+   // }
+
+   a {
+      display: block;
+      width: 100%;
+      line-height: 3;
+      font-weight: 100;
+      transition: all 0.2s;
+      &:hover {
+         color: #D4C17F;
+      }	
+   }
+
+   &__icon {
+      display: flex;
+   }
+
+   .icon__item {
+      height: 40px;
+      width: 40px;
+      padding-right: 20px;
+   }
+
+}
+
