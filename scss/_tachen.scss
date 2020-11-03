@@ -1,0 +1,14 @@
+.tachen {
+   background-image: url(../image/tachen/1.jpg);
+
+   &__block {
+      position: absolute;
+      bottom: 15%;
+      left: 17%;
+   }
+
+   &__btn {
+      width: 214px;
+   }
+
+}

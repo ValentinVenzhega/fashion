@@ -1,0 +1,49 @@
+.woman {
+   padding-top: 110px;
+   text-align: center;
+
+   &__subtitle {
+      font-size: 15px;
+      padding-bottom: 65px;
+   }
+
+   &__block {
+      display: flex;
+      justify-content: space-around;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 15px;
+   }
+
+   &__img  {
+      padding-bottom: 38px;
+   }
+
+   &__uptitle {
+      padding-bottom: 10px;
+   }
+
+   &__subsubtitle {
+      padding-bottom: 10px;
+      font-weight: 700;
+
+   }
+
+   &__price {
+      color: #CF2929;
+   
+      & span {
+      padding-right: 20px;
+      text-decoration: line-through;
+      color: #22262A;
+      }
+   }
+   
+}
+
+.title__up {
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: 700;
+   padding-bottom: 20px;
+}
