@@ -21,23 +21,29 @@ input, button {
    &:focus {
       outline: none;
    }  
+
+   &:hover {
+      cursor: pointer;
+   }
 }
 
 a {
    text-decoration: none;
    color: #22262A;
-   // &:hover {
-   //    color: #D4C17F;
-   //    text-decoration: underline;
-   // }
+   &:hover {
+      font-weight: 700;
+   }
       
 }
 
-// .text {
-//    &:hover {
-//       color: #D4C17F;
-//       text-decoration: underline;
-//    }
-   
-// }
+.button:hover {
+   background: #ffffff;
+   color:  #22262A;
+   font-weight: 600;
+}
 
+.button__two:hover {
+   background: #22262A;
+   color: #ffffff;
+   font-weight: 600;
+}
