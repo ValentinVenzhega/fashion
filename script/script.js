@@ -3,7 +3,10 @@
 const burgerMenu = document.querySelector('.menu__burger'),
       menu = document.querySelector('.menu'),
       menuItem = document.querySelectorAll('.menu__i'),
-      love = document.querySelector('.love');
+      love = document.querySelector('.love'),
+      searchSmall = document.querySelector('.search__small'),
+      headerIcon = document.querySelector('.header__icon');
+
 
 
 
@@ -26,7 +29,7 @@ menuItem.forEach(function (e) {
 });
 
 
-// 1-й способ
+// ставим и убираем лайк
 love.addEventListener('click', (e) => {
    const target = e.target;
    if(target.classList.contains('love')) {
@@ -39,3 +42,28 @@ love.addEventListener('click', (e) => {
       `;
    }
 });
+
+
+// открытие большой строки поиска
+
+
+searchSmall.addEventListener('click', () => {
+
+   const div = document.createElement('div');
+   div.className= 'search__big';
+   headerIcon.prepend(div);
+   const searchBig = document.querySelector('.search__big');
+   searchBig.innerHTML = `
+      <div class="header__search footer__search">
+         <input type="text" class="header__input " placeholder="Your Email Address">
+         <button class="header__btn">
+            <div class="icon__img icon__small">
+               <img src="./image/header/2.svg" alt="2">
+            </div> 
+         </button>
+      </div>
+   `;
+   searchSmall.remove();
+   // searchSmall.remove();
+});
+

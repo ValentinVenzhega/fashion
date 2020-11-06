@@ -28,6 +28,38 @@
 
 .header__icon {
   display: flex;
+  align-items: center;
+}
+
+.header__search {
+  margin-right: 30px;
+}
+
+.header__input {
+  width: 200px;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #000000;
+  padding: 0 0 0 20px;
+}
+
+.header__input:hover {
+  background: #c2bdbd;
+}
+
+.header__btn {
+  height: 37px;
+  width: 50px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #000000;
+  background: #ffffff;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header__btn:hover {
+  background: #c2bdbd;
 }
 
 .icon__img {
@@ -38,6 +70,10 @@
 
 .icon__img:last-child {
   padding-right: 0;
+}
+
+.icon__small {
+  padding-left: 12px;
 }
 
 .menu {

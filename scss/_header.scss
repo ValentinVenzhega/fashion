@@ -26,16 +26,52 @@
 
    &__icon {
       display: flex;
+      align-items: center;
    }  
+
+   &__search {
+      margin-right: 30px;
+   }
+
+   &__input {
+      width: 200px;
+      height: 35px;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid #000000;
+      padding: 0 0 0 20px;
+      &:hover {
+         background: #c2bdbd;
+      }
+   }
+
+   &__btn {
+      height: 37px;
+      width: 50px;
+      border-radius: 0 5px 5px 0;
+      border: 1px solid #000000;
+      background: #ffffff;
+      padding: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover {
+         background: #c2bdbd;
+      }
+      
+   }
 
 }
 
-.icon__img {
-   width: 20px;
-   height: 20px;
-   padding-right: 40px;
-   &:last-child {
-      padding-right: 0;
+.icon {
+   &__img {
+      width: 20px;
+      height: 20px;
+      padding-right: 40px;
+      &:last-child {
+         padding-right: 0;
+      }
+   }
+   &__small {
+      padding-left: 12px;
    }
 }
    
@@ -153,5 +189,9 @@
       padding-right: 20px;
    }
 
+   
+
 }
+
+
 
