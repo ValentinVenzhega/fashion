@@ -30,6 +30,7 @@
    }  
 
    &__search {
+      display: none;
       margin-right: 30px;
    }
 
@@ -191,6 +192,10 @@
 
    
 
+}
+
+.search__big {
+   display: flex;
 }
 
 

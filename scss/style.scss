@@ -31,8 +31,8 @@ a {
    text-decoration: none;
    color: #22262A;
    &:hover {
-      font-weight: 700;
-   }
+      color: #D4C17F;
+   }	
       
 }
 
@@ -40,10 +40,12 @@ a {
    background: #ffffff;
    color:  #22262A;
    font-weight: 600;
+   transition: all 0.2s ease 0s;
 }
 
 .button__two:hover {
    background: #22262A;
    color: #ffffff;
    font-weight: 600;
+   transition: all 0.2s ease 0s;
 }

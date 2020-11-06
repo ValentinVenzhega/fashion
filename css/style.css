@@ -32,6 +32,7 @@
 }
 
 .header__search {
+  display: none;
   margin-right: 30px;
 }
 
@@ -188,6 +189,10 @@
   height: 40px;
   width: 40px;
   padding-right: 20px;
+}
+
+.search__big {
+  display: flex;
 }
 
 .main {
@@ -532,18 +537,20 @@ a {
 }
 
 a:hover {
-  font-weight: 700;
+  color: #D4C17F;
 }
 
 .button:hover {
   background: #ffffff;
   color: #22262A;
   font-weight: 600;
+  transition: all 0.2s ease 0s;
 }
 
 .button__two:hover {
   background: #22262A;
   color: #ffffff;
   font-weight: 600;
+  transition: all 0.2s ease 0s;
 }
 /*# sourceMappingURL=style.css.map */

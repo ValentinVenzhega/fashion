@@ -1,11 +1,13 @@
 'use strict'
 
 const burgerMenu = document.querySelector('.menu__burger'),
-      menu = document.querySelector('.menu'),
-      menuItem = document.querySelectorAll('.menu__i'),
-      love = document.querySelector('.love'),
-      searchSmall = document.querySelector('.search__small'),
-      headerIcon = document.querySelector('.header__icon');
+   menu = document.querySelector('.menu'),
+   menuItem = document.querySelectorAll('.menu__i'),
+   love = document.querySelector('.love'),
+   searchSmall = document.querySelector('.search__small'),
+   headerSearch = document.querySelector('.header__search'),
+   headerBtn = document.querySelector('.header__btn'),
+   headerInput = document.querySelector('.header__input');
 
 
 
@@ -21,7 +23,7 @@ burgerMenu.addEventListener('click', () => {
 
 //  закрытие меню и бургера по клику на элемент меню
 
-menuItem.forEach(function (e) { 
+menuItem.forEach(function (e) {
    e.addEventListener('click', () => {
       burgerMenu.classList.toggle('menu__burger_active');
       menu.classList.toggle('menu_active');
@@ -32,7 +34,7 @@ menuItem.forEach(function (e) {
 // ставим и убираем лайк
 love.addEventListener('click', (e) => {
    const target = e.target;
-   if(target.classList.contains('love')) {
+   if (target.classList.contains('love')) {
       love.innerHTML = `
             <img src="./image/header/5.svg" alt="5">
       `;
@@ -44,26 +46,19 @@ love.addEventListener('click', (e) => {
 });
 
 
-// открытие большой строки поиска
-
+// открытие большой формы поиска
 
 searchSmall.addEventListener('click', () => {
-
-   const div = document.createElement('div');
-   div.className= 'search__big';
-   headerIcon.prepend(div);
-   const searchBig = document.querySelector('.search__big');
-   searchBig.innerHTML = `
-      <div class="header__search footer__search">
-         <input type="text" class="header__input " placeholder="Your Email Address">
-         <button class="header__btn">
-            <div class="icon__img icon__small">
-               <img src="./image/header/2.svg" alt="2">
-            </div> 
-         </button>
-      </div>
-   `;
-   searchSmall.remove();
-   // searchSmall.remove();
+   headerSearch.style.display = 'block';
+   searchSmall.style.display = 'none';
 });
 
+// закрытие большой строки поиска по кнопке и вне формы поиска
+
+document.addEventListener('mousedown', (e) => {
+   if (e.target.closest('.header__search') === null || e.target.closest('.header__btn')) {
+      headerSearch.style.display = 'none';
+      searchSmall.style.display = 'block';
+      headerInput.value = '';
+   }
+});
