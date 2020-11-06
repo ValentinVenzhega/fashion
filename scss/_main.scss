@@ -1,18 +1,14 @@
 .main {
    text-transform: uppercase;
-   background-image: url(../image/header/1.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 745px;
-   position: relative;
+
 
    &__block {
       position: absolute;
       bottom: 15%;
-      right: 16%;
+      right: 15%;
+      z-index: 20;
 
    }
-
 
    &__uptitle {
       font-size: 18px;
@@ -46,4 +42,20 @@
          margin-right: 0;
       }
    }
+}
+
+.swiper-slide-bg1 {
+   background-image: url(../image/header/1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 45%;
+
+}
+
+.swiper-slide-bg2 {
+   background-image: url(../image/tachen/1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 45%;
+
 }

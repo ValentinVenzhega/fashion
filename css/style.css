@@ -15,6 +15,7 @@
 .header__list {
   display: flex;
   font-size: 18px;
+  margin: 0;
 }
 
 .header__item {
@@ -89,8 +90,8 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  top: -160vw;
-  left: 0;
+  top: 0;
+  left: -500px;
 }
 
 .menu__list {
@@ -160,7 +161,7 @@
 }
 
 .menu_active {
-  top: 0;
+  left: 0;
 }
 
 .menu ul {
@@ -197,17 +198,13 @@
 
 .main {
   text-transform: uppercase;
-  background-image: url(../image/header/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 745px;
-  position: relative;
 }
 
 .main__block {
   position: absolute;
   bottom: 15%;
-  right: 16%;
+  right: 15%;
+  z-index: 20;
 }
 
 .main__uptitle {
@@ -242,6 +239,20 @@
 
 .main__btn:last-child {
   margin-right: 0;
+}
+
+.swiper-slide-bg1 {
+  background-image: url(../image/header/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45%;
+}
+
+.swiper-slide-bg2 {
+  background-image: url(../image/tachen/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45%;
 }
 
 .catagory {
@@ -382,10 +393,6 @@
   margin: 0 auto;
 }
 
-.tachen {
-  background-image: url(../image/tachen/1.jpg);
-}
-
 .tachen__block {
   position: absolute;
   bottom: 15%;
@@ -510,6 +517,34 @@
   }
   .menu__burger {
     display: block;
+  }
+}
+
+@media (max-width: 632px) {
+  .main {
+    text-align: center;
+  }
+  .main__title {
+    font-size: 45px;
+  }
+  .main__subtitle {
+    display: none;
+  }
+  .main__block {
+    position: inherit;
+    padding: 20px 15px 0 15px;
+  }
+  .main__btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .swiper-slide-bg1 {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  .swiper-slide-bg2 {
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
 }
 

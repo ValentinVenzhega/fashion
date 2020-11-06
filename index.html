@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>fashion</title>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/normalize.css">
-   <link rel="stylesheet" href="./css/style.css">
-</head> 
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.css"/>
+   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+</head>
+
 <body>
    <header class="header">
       <div class="header__logo">your logo</div>
@@ -26,7 +30,7 @@
          <span></span>
       </div>
       <div class="menu">
-         <div class="menu__icon"> 
+         <div class="menu__icon">
             <a href="#" class="icon__item">
                <img src="./image/header/2.svg" alt="2">
             </a>
@@ -46,14 +50,14 @@
             <li class="menu__i"><a href="#6">blog</a></li>
          </ul>
       </div>
-      <div class="header__icon"> 
+      <div class="header__icon">
          <div class="header__search ">
             <div class="search__big">
                <input type="text" class="header__input " placeholder="specify goods">
                <button class="header__btn">
                   <div class="icon__img icon__small">
                      <img src="./image/header/2.svg" alt="2">
-                  </div> 
+                  </div>
                </button>
             </div>
          </div>
@@ -64,21 +68,39 @@
             <img src="./image/header/3.svg" alt="3">
          </a>
          <a href="#" class="icon__img love">
-            <img src="./image/header/4.svg"  class="love" alt="4">
+            <img src="./image/header/4.svg" class="love" alt="4">
          </a>
       </div>
    </header>
-   <section class="main">
-      <div class="main__block">
-         <div class="main__uptitle">new trend</div>
-         <div class="main__title">collusion</div>
-         <div class="main__subtitle">An exclusive selection of this season's trends.</div>
-         <div class="main__button">
-            <button class="main__btn button">discover</button>
-            <button class="main__btn button">shop now</button>
+   <div class="swiper-container">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide swiper-slide-bg1 ">
+            <div class="main">
+               <div class="main__block">
+                  <div class="main__uptitle">new trend</div>
+                  <div class="main__title">collusion</div>
+                  <div class="main__subtitle">An exclusive selection of this season's trends.</div>
+                  <div class="main__button">
+                     <button class="main__btn button">discover</button>
+                     <button class="main__btn button">shop now</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-slide swiper-slide-bg2">
+            <div class="tachen main">
+               <div class="main__block tachen__block">
+                  <div class="main__uptitle">own the day</div>
+                  <div class="main__title">tachen 19</div>
+                  <div class="main__button">
+                     <button class="main__btn tachen__btn button">shop collection</button>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
-   </section>
+      <div class="swiper-scrollbar"></div>
+   </div>
    <section class="catagory">
       <div class="container">
          <div class="catagory__bigblock">
@@ -100,7 +122,7 @@
          </div>
       </div>
    </section>
-   <section class="woman">
+   <!--<section class="woman">
       <div class="container">
          <div class="woman__title title__up">woman's fashion</div>
          <div class="woman__subtitle">Shop our new arrivals from established brands</div>
@@ -182,15 +204,35 @@
       </div>
 
    </section>
-   <section class="tachen main">
-      <div class="main__block tachen__block">
-         <div class="main__uptitle">own the day</div>
-         <div class="main__title">tachen 19</div>
-         <div class="main__button">
-            <button class="main__btn tachen__btn button">shop collection</button>
+   <div class="swiper-container">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide swiper-slide-bg1 ">
+            <div class="main">
+               <div class="main__block">
+                  <div class="main__uptitle">new trend</div>
+                  <div class="main__title">collusion</div>
+                  <div class="main__subtitle">An exclusive selection of this season's trends.</div>
+                  <div class="main__button">
+                     <button class="main__btn button">discover</button>
+                     <button class="main__btn button">shop now</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-slide swiper-slide-bg2">
+            <div class="tachen main">
+               <div class="main__block tachen__block">
+                  <div class="main__uptitle">own the day</div>
+                  <div class="main__title">tachen 19</div>
+                  <div class="main__button">
+                     <button class="main__btn tachen__btn button">shop collection</button>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
-   </section>
+      <div class="swiper-scrollbar"></div>
+   </div>
    <footer class="footer">
       <div class="container">
          <div class="footer__one">
@@ -296,7 +338,10 @@
          </div>
       </div>
       <div class="footer__two">Copyright © 2020 . Your company name  All rights reserved</div>
-   </footer>
-   <script src="/script/script.js"></script>
+   </footer> -->
+   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+   <script type="module" src="/script/script.js"></script>
+
 </body>
+
 </html>

@@ -12,3 +12,37 @@
       display: block;
    }
 }
+
+@media (max-width: 632px) {
+   .main {
+      text-align: center;
+      &__title {
+         font-size: 45px;
+      }
+
+      &__subtitle {
+         display: none;
+      }
+
+      &__block {
+         position: inherit;
+         padding: 20px 15px 0 15px;
+      }
+
+      &__btn {
+         margin-right: 0;
+         margin-bottom: 20px;
+      }
+
+   }
+
+   .swiper-slide-bg1 {
+      padding-top:8%;
+      padding-bottom: 8%;
+   }
+
+   .swiper-slide-bg2 {
+      padding-top:8%;
+      padding-bottom: 8%;
+   }
+}
