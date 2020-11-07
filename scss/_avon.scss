@@ -11,10 +11,12 @@
 
    &__block {
       display: flex;
+      justify-content: center;
    }
    
    &__box {
       position: relative;
+      // padding: 0 20px 20px;
    }
 
    &__img {
@@ -23,8 +25,8 @@
 
       &-pos {
          position: absolute;
-         bottom: -33px;
-         right: -78px;
+         bottom: -23px;
+         right: -16%;
          padding: 30px;
          background: #ffffff;
       }

@@ -1,10 +1,11 @@
 .catagory {
    
-   padding-top: 121px;
+   padding: 121px 20px 0 20px;
 
    &__bigblock {
       display: flex;
       justify-content: center;
+      align-items: center;
    }
 
 
@@ -28,11 +29,12 @@
    }
 
    &__box {
-      // padding-top: 20px;
+      display: flex;
 
       &-pos {
          padding-top: 25px;
          padding-right: 25px;
+         
          &:last-child {
             padding-right: 0
          }

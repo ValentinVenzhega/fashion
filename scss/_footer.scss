@@ -6,6 +6,7 @@
       display: flex;
       justify-content: space-around;
       padding-bottom: 106px;
+      flex-wrap: wrap
    }
 
    &__img {
@@ -30,17 +31,7 @@
       padding-bottom: 17px;
       line-height: 22px;
       position: relative;
-   
-
-      &::after {
-         content: '';
-         width: 235px;
-         height: 2px;
-         background: black;
-         position: absolute;
-         top: 24px;
-         left: 0;
-      }
+      text-decoration: underline;
    }
 
    &__phone {
@@ -69,6 +60,8 @@
 
    &__search {
       display: flex;
+      justify-content: center;
+      margin-bottom: 70px;
    }
 
    &__input {
@@ -77,7 +70,7 @@
       border-radius: 5px 0 0 5px;
       border: none;
       padding: 0 0 0 20px;
-      margin-bottom: 70px;
+      
    }
 
    &__btn {
@@ -101,7 +94,6 @@
          font-weight: 700;
       }
    }
-   
 }
    
 
